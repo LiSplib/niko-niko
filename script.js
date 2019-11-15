@@ -7,15 +7,10 @@ while( users.length < numbersOfUser){
     users.push(user);
 };
 
-function addUser(newUser){
-    let addUser = document.getElementById("user");
-    addUser.textContent = newUser;
-    
-        let newElem = document.createElement('td');
-        newElem.innerText = user;
-        document.body.appendChild(newElem);
-        
+for( let i in users){
+    let newElem = document.createElement('tr');
+    newElem.innerText = users[i];
+    document.getElementById('user').appendChild(newElem);
 }
 
 
-addUser(user);

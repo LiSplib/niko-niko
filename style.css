@@ -1,0 +1,9 @@
+table,
+td, th, tr{
+    border: 1px solid #333;
+}
+
+table{
+    table-layout: auto;
+    width: 100%;
+}
