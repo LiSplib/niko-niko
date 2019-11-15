@@ -10,9 +10,12 @@ while( users.length < numbersOfUser){
 function addUser(newUser){
     let addUser = document.getElementById("user");
     addUser.textContent = newUser;
-    if(users > 1){
-        document.createElement('td');
-    }
+    
+        let newElem = document.createElement('td');
+        newElem.innerText = user;
+        document.body.appendChild(newElem);
+        
 }
+
 
 addUser(user);
