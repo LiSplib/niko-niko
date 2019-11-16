@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 table,
 td, th, tr{
     border: 1px solid #333;
@@ -6,4 +11,15 @@ td, th, tr{
 table{
     table-layout: auto;
     width: 100%;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    color: white;
+    background: #333;
 }
