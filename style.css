@@ -3,14 +3,16 @@ body{
     padding: 0;
 }
 
-table,
-td, th, tr{
-    border: 1px solid #333;
+#user{
+    width: 100%;
+    height: 350px;
+    font-size: 3em;
 }
 
-table{
-    table-layout: auto;
-    width: 100%;
+#user p{
+    border: 1px solid rgb(224, 222, 222);
+    padding: 0 20px;
+    background: rgb(224, 222, 222);
 }
 
 .banner{
