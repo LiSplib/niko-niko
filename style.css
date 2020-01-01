@@ -21,7 +21,17 @@ body{
     width: 100vw;
     text-align: center;
     margin: auto;
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     background: #333;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.start, .info{
+    text-align: center;
+    font-size: 2em;
 }
