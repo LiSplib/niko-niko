@@ -26,6 +26,20 @@ body{
     background: #333;
 }
 
+#addUser{
+    width: 150px;
+    height: 55px;
+    border-radius: 20px;
+    float: right;
+    margin: 0 20px;
+    background-color: #333;
+    color: white;
+}
+
+#addUser:hover{
+    color: rgb(235, 235, 226);
+    scale: 0.98;
+}    
 img{
     width: 150px;
     height: 150px;
@@ -34,4 +48,5 @@ img{
 .start, .info{
     text-align: center;
     font-size: 2em;
+    margin-top: 20px;
 }
