@@ -31,13 +31,13 @@ function updateUser(users){
 function updateStatus(){
     let newImgs = document.querySelectorAll('p');
     for(newImg of newImgs){
-        newImg.addEventListener('click', changeImage);
+        newImg.addEventListener('click', loadImage);
     };
 }
-function changeImage(){
+function loadImage(){
     // alert(`c'est cliqué`);
     const newPhoto = document.createElement('img');
-    newImg.before(newPhoto);
+    newImg.appendChild(newPhoto);
 
 
     let condition = prompt('Comment vous sentez vous ? \r\r Réponse 1: ok \r Réponse 2: bof \r Réponse 3: bad');
