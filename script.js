@@ -20,7 +20,7 @@ function createUser(){
 }
 
 function updateUser(users){
-    for(user of users){
+    for(let user of users){
         const newElem = document.createElement('p');
         newElem.textContent = user;
         document.getElementById('user').appendChild(newElem);
@@ -30,17 +30,17 @@ function updateUser(users){
 
 function updateStatus(){
     let newImgs = document.querySelectorAll('p');
-    for(newImg of newImgs){
-        newImg.addEventListener('click', loadImage);
+    for(let newImg of newImgs){
+        newImg.addEventListener('click', ev => loadImage(newImg));
     };
+   
 }
-function loadImage(){
+function loadImage(newImg){
     // alert(`c'est cliqué`);
     const newPhoto = document.createElement('img');
-    newImg.appendChild(newPhoto);
 
 
-    let condition = prompt('Comment vous sentez vous ? \r\r Réponse 1: ok \r Réponse 2: bof \r Réponse 3: bad');
+    let condition = prompt('Quelle est votre humeur du jour ? \r\r Réponse 1: Tout va bien \r\r Réponse 2: Ca va mais c\'est pas top \n\n Réponse 3: Pas content \n\n');
     switch (condition) {
         case "1":
             newPhoto.setAttribute('src', `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2Fs9cAAOxymnFSHPuB%2Fs-l400.jpg&f=1&nofb=1`);
@@ -54,6 +54,7 @@ function loadImage(){
         default: alert('Merci de choisir un chiffre entre 1 et 3 !');
             break;
     }
+    newImg.appendChild(newPhoto);
 }
 
 
