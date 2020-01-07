@@ -33,10 +33,9 @@ body{
     width: 150px;
     height: 55px;
     border-radius: 20px;
-    float: right;
-    margin: 0 20px;
-    background-color: #333;
+    background-color: rgb(75, 74, 74);
     color: white;
+    margin: 10px;
 }
 
 #addUser:hover{
@@ -54,4 +53,10 @@ img{
     text-align: center;
     font-size: 2em;
     margin-top: 20px;
+}
+
+#user button{
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
 }

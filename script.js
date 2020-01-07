@@ -62,6 +62,27 @@ function loadImage(newImg){
             break;
     }
     newImg.appendChild(newPhoto);
+
+
+    if(user !== 0){
+        saveTheDay();
+    }
+    newImg.removeEventListerner('click', ev => loadImage(newImg), false);
 }
 
+
+
+
+function saveTheDay(){
+    let save = document.createElement('button');
+    document.getElementById('user').appendChild(save);
+    save.textContent = 'Sauvegarder';
+}
+
+let myJSON = {
+    user: "${user}",
+    status: "${user.newPhoto}"
+};
+
+let myNewJSON = JSON.stringify(myJSON, null, '\t');
 
