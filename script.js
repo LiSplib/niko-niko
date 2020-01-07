@@ -20,11 +20,18 @@ function createUser(){
 }
 
 function updateUser(users){
-    for(let user of users){
-        const newElem = document.createElement('p');
-        newElem.textContent = user;
-        document.getElementById('user').appendChild(newElem);
-    };
+    // for(let user of users){
+    //     const newElem = document.createElement('p');
+    //     newElem.textContent = user;
+    //     document.getElementById('user').appendChild(newElem);
+    // };
+    document.getElementById('user').innerHTML = `
+        <div>
+            ${users.map(user=>{
+                return `<p>${user}</p>`;
+                        }).join('')
+            }
+        </div>`;
     updateStatus(user);
 }
 

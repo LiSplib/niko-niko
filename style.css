@@ -13,14 +13,17 @@ body{
     border: 1px solid rgb(224, 222, 222);
     padding: 0 20px;
     background: rgb(224, 222, 222);
+    text-align: center;
 }
 
 .banner{
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    flex-flow: row wrap;
     width: 100vw;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     font-size: 3em;
     color: white;
     background: #333;
